@@ -7,7 +7,7 @@ import cors from 'cors'
 import userRoutes from "./userRoutes.js"
 
 const app = express();
-const port = 3020;
+const port = process.env.PORT;
 
 // Middleware
 app.use(
