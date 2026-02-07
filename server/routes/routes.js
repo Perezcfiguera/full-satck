@@ -22,6 +22,7 @@ app.use(express.json());
 
 // Endpoints
 app.use('/users', userRoutes)
+app.use('/pizza', pizzaRoutes)
 
 // Initiate server
 sequelize
