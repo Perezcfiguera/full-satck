@@ -4,7 +4,7 @@ import { sequelize } from '../index.js';
 import cors from 'cors'
 
 // Routes
-import userRoutes from "./userRoutes.js"
+import  pizzaRoutes from "./pizzaRoutes.js"
 
 const app = express();
 const port = process.env.PORT;
@@ -21,7 +21,6 @@ app.use(
 app.use(express.json());
 
 // Endpoints
-app.use('/users', userRoutes)
 app.use('/pizza', pizzaRoutes)
 
 // Initiate server

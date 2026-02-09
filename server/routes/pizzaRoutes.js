@@ -1,4 +1,4 @@
-import { request, response, Router } from "express";
+import { Router } from "express";
 import { Pizza } from "../models/pizzaModel.js";
 import { sequelize } from "../index.js";
 
@@ -9,13 +9,7 @@ router.get('/', async (request, response) => {
     try{
         const statusQuery = request.query.status;
 
-        const allPizza = await Pizza.findAll({
-
-            where: {
-                status: statusQuery
-            }
-
-        })
+        const allPizza = await Pizza.findAll()
         return response.json({ allPizza });
 
 
@@ -44,3 +38,5 @@ router.post('/pizza', async (request, response) => {
         },{transaction})
 
 })
+
+export default router

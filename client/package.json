@@ -14,6 +14,7 @@
     "@popperjs/core": "^2.11.8",
     "base-fullstack-boilerplate": "file:..",
     "bootstrap": "^5.3.8",
+    "prop-types": "^15.8.1",
     "react": "^19.2.0",
     "react-dom": "^19.2.0",
     "react-router-dom": "^7.9.6"
